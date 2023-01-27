@@ -19,7 +19,18 @@ RUN apt-get update && apt-get install -y \
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Install extensions
-RUN docker-php-ext-install pdo_mysql mbstring zip exif pcntl bcmath gd && docker-php-ext-configure zip
+RUN docker-php-ext-install \
+    pdo_mysql \
+    mbstring \
+    zip \
+    exif \
+    pcntl \
+    bcmath \
+    gd \
+    xml \
+    iconv \
+    simplexml \
+    && docker-php-ext-configure zip
 
 # Setup working directory
 WORKDIR /var/www
