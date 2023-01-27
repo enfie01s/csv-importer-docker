@@ -1,0 +1,3 @@
+[submodule "csv-importer"]
+	path = csv-importer
+	url = git@github.com:enfie01s/csv-importer.git
