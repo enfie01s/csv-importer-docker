@@ -16,6 +16,6 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
-docker/mysql/dbdata/*
+docker/mysql/data/*
 docker/nginx/logs/*
 .DS_Store
